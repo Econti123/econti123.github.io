@@ -1,0 +1,11 @@
+/* -----------Navigation Bar-------------*/
+
+.nav{
+    position: block;
+    background-color: darkblue;
+
+}
+.Logo{
+    height: 50px;
+    width: 50px;
+}
