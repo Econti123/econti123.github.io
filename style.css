@@ -1,30 +1,191 @@
-/* -----------Navigation Bar-------------*/
+/*===============================================Navigation Bar========================================================*/
+.wrapper{
+    background-color: #fefefe;
+    margin-bottom: 0px;
+    height: 60px;
+    display: flex;
+}
+.logo{
+    width:5%;
+    height: 10px;
+    float:left;
+    margin-top: 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: block;
+}
+.head {
+    height: 5px;
+    width: 200px;
+    background-color: #fefefe;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 18px;
+    color: #000043;
+    font-family: 'Times New Roman', Times, serif;
+}
 .nav{
+    display:flex;
+    justify-content: right;
+    margin-right: 0%;
+    margin-left: 5%;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
     display: flex;
-    background-color: #fefefe ;
-
+    align-items:center;
+    margin-right: 1%;
+    font-family: 'Times New Roman', Times, serif;
 }
-.Logo{
-    height: 70px;
-    width: 70px;
-    padding: 10px;
-    padding-right: 20px;
-
+li{
+    display:inline;
+    padding:0.5%;
 }
-.navh1{
-    color: #000043;
+.nav  li a{
+    color:#000043;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+}
+.nav li a:hover{
+    background-color: #4255a4;
+    color:black;
+}
+.nav-buttons{
+    margin-top: 19px;
+    margin-left: 200px;
+}
+.nav-buttons :hover{
+    background-color: #4255a4;
+    color:black;
 }
 
-.il{
-    display: flex;
-    color: #000043;
-    padding: 10px;
-
-}
-
-
-
-
+/*===============================================Body========================================================*/
 body{
     background-color: #000043;
+}
+
+/*===============================================Home========================================================*/
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+
+
+.news{
+    padding-left: 18%;
+}
+.news button{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.news :hover{
+    background-color: #4255a4;
+    color:black;
+}
+/*===============================================Study========================================================*/
+.study-buttons{
+    padding-left: 18%;
+}
+.pt1 button{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.pt2 button{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+.pt1 :hover{
+    background-color: #4255a4;
+    color:black;
+}
+.pt2 :hover{
+    background-color: #4255a4;
+    color:black;
+}
+
+/*===============================================Services========================================================*/
+.box{
+    background-color: #4255a4;
+    width: 100%;
+    height: 150px;
+}
+
+.text{
+    color: #fefefe;
+}
+.text h1{
+    padding-left: 5%;
+}
+.text p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*===============================================Research========================================================*/
+.research {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.research div {
+  background-color: #f1f1f1;
+  border: 5px solid #000043;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.research :hover{
+    background-color: #4255a4;
+    color:black;
+}
+
+/*===============================================Contact========================================================*/
+.form{
+    background-color: #4255a4;
+}
+.contact-form{
+    margin-top: 5%;
+    margin-left: 25%;
+}
+.contact-form label{
+    display: block;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+    appearance: none;
+    border-color: var(--dark);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    display: block;
+    width: 50em;
+
 }

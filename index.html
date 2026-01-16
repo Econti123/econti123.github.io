@@ -3,27 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="style.css">
-
     <title>Home</title>
 </head>
 <body>
-    <nav class="nav">
-        <img src="Images/MCAST-Logo.png" alt="Logo" class="Logo">
-        <h1 class="navh1">MCAST</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Study.html">Study</a></li>
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-        <button type="button">Classter Login</button>
-        <button type="button">Search</button>
-    </nav>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="Images/MCAST-Logo.png" alt="Logo" width="50px" height="50px">
+        </div>
+
+        <div class="head">MCAST</div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Study.html">Study</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Research.html">Research</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-buttons">
+            <button type="button">Classter Login</button>
+            <button type="button">Search</button>
+        </div>
+    </div>
 
 
-    
+    <div class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="Images/aprenticeship.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="Images/graduations.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="Images/green.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="Images/handbook.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="Images/library.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="Images/part-time.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+
+    <br>
+
+    <div class="news">
+        <button>Latest News</button>
+        <button>Latest News</button>
+        <button>Latest News</button>
+    </div>
 </body>
 </html>
